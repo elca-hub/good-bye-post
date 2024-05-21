@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap');
+
+.custom-button {
+  padding: .4rem 1.2rem;
+  font-family: "Klee One", cursive;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: all .5s;
+  color: #464646;
+}
+
+.custom-button:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+html {
+  background-color: #1C1112;
+  color: #c0c0c0;
+}
+
+body {
+  font-family: "Klee One", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+header, .post-section {
+  text-align: center;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.6rem;
+  margin: 0;
+}
+
+header p {
+  margin: 0;
+}
+
+.title-icon {
+  width: 20%;
+  min-width: 10rem;
+}
+
+.form-item-container {
+  margin: 0 auto;
+
+  margin-bottom: 1rem;
+}
+
+.post-button {
+  font-size: 1.6rem;
+}
+
+.post-form {
+  width: 50%;
+  height: 10rem;
+  font-size: 1rem;
+  font-family: "Klee One", cursive;
+  padding: .6rem;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  resize: none;
+  background-color: #1C1112;
+  color: #c0c0c0;
+}
+
+.post-form::placeholder {
+  color: #c0c0c0;
+}
+
+.post-form:focus {
+  outline: none;
+}
+
+.alert-text {
+  font-size: 1.6rem;
+}
+
+.alert {
+  z-index: -1;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(28 17 18 / 80%);
+
+  transition: all .5s;
+}
+
+.alert-in {
+  z-index: 100;
+  opacity: 1;
+}
